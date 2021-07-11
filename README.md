@@ -4,6 +4,7 @@ Basic starter package w/ React for development.
 
 ## Included in this Starterpack
 * react
+* redux
 * routing + fallback support
 * webpack
 * sass

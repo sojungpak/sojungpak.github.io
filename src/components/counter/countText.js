@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
 // this can be dumb or smart component - connect works with either
-const Counter = (props) => {
+const CountText = (props) => {
   return (
     <div>
       Current Count: {props.count}
@@ -20,4 +20,4 @@ const mapStateToProps = (state) => (
 
 // react-redux glue -- outputs Container that know state in props
 // also with an optional HOC withRouter
-export default withRouter(connect(mapStateToProps, null)(Counter));
+export default withRouter(connect(mapStateToProps, null)(CountText));
