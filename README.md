@@ -1,8 +1,9 @@
-# starterpack-basic
+# starterpack-react
 
-Basic starter package for development. 
+Basic starter package w/ React for development. 
 
 ## Included in this Starterpack
+* react
 * webpack
 * sass
 * babel
