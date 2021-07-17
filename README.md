@@ -16,7 +16,7 @@ Basic starter package w/ React for development.
 In your project directory:
 ```bash
 git remote add starter https://github.com/JY2452/starterpack-react.git
-git pull starter main --allow-unrelated-histories
+git pull starter master --allow-unrelated-histories
 ```
 
 Once pulled, install your webpack dependencies:
