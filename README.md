@@ -19,6 +19,13 @@ git remote add starter https://github.com/JY2452/starterpack-react.git
 git pull starter master --allow-unrelated-histories
 ```
 
+
+To pull a specific release version, change "master" to the namee of the tag.
+For example:
+```bash
+git pull starter reactOnly --allow-unrelated-histories
+```
+
 Once pulled, install your webpack dependencies:
 ```bash
 npm install
