@@ -31,5 +31,21 @@ Once pulled, install your webpack dependencies:
 npm install
 ```
 
+## Redux Usage
+Install the following libraries:
+```bash
+npm install redux-thunk
+npm install axios
+```
+
+In the root index.js file:
+```javascript
+// at the top
+import thunk from 'redux-thunk';
+
+// change the applyMiddleware line:
+applyMiddleware(thunk),
+```
+
 ## References
 * [Dartmouth CS 52 Starterpack Tutorial](https://cs52.me/assignments/sa/starterpack/)
