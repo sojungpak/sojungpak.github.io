@@ -774,7 +774,7 @@ body {
   padding: 580px;
 }
 .space_digital {
-  padding: 500px;
+  padding: 320px;
 }
 .space_3d {
   padding: 300px;
@@ -786,4 +786,25 @@ body {
   position: absolute;
   left: 0px;
   top: 200px;
+}
+#map {
+  position: absolute;
+  left: 297px;
+  top: 725px;
+}
+
+.space_pw {
+  padding: 900px;
+}
+
+.raposter {
+  position: absolute;
+  left: 530px;
+  top: 540px;
+}
+
+.didotspread {
+  position: absolute;
+  left: 310px;
+  top: 1360px;
 }
