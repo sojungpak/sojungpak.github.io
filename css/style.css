@@ -134,13 +134,6 @@ body {
     white-space: nowrap;
   }
 
-  #caci {
-    position: absolute;
-    width: 380px;
-    height: 225px;
-    left: 330px;
-    top: 582px;
-  }
   figcaption {
     font-family: 'Lato';
     font-style: normal;
@@ -183,14 +176,14 @@ body {
     left: 730px;
     top: 816px;
   }
-  #se {
+  #ar {
     position: absolute;
     width: 380px;
     height: 225px;
     left: 330px;
     top: 862px;
   }
-  #secaption {
+  #arcaption {
     position: absolute;
     width: 103px;
     height: 14px;
@@ -226,28 +219,28 @@ body {
     left: 330px;
     top: 1379px;
   }
-  #le {
+  #se {
     position: absolute;
     width: 380px;
     height: 225px;
     left: 730px;
     top: 1142px;
   }
-  #lecaption {
+  #secaption {
     position: absolute;
     width: 87px;
     height: 14px;
     left: 730px;
     top: 1377px;
   }
-  #ss {
+  #le {
     position: absolute;
     width: 380px;
     height: 225px;
     left: 330px;
     top: 1422px;
   }
-  #sscaption {
+  #lecaption {
     position: absolute;
     width: 95px;
     height: 14px;
@@ -807,4 +800,30 @@ body {
   position: absolute;
   left: 310px;
   top: 1360px;
+}
+
+.gif2 {
+  width: 380px;
+  height: 225px;
+  margin-left: 290px;
+  margin-top: -240px;
+  
+  overflow: hidden;
+}
+.gif2 img {
+  position: static;
+  left: 330px;
+  top: 582px;
+  transition: all 0.3s;
+}
+.gif2:hover img{
+  transform: scale(1.1);
+}
+.ar_video {
+  position: absolute;
+  left: 400px;
+  top: 1450px;
+}
+.space_ar {
+  padding: 800px;
 }
