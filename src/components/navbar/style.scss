@@ -1,7 +1,7 @@
-@use "../../constants/colors" as c;
+@use "../colors.scss" as c;
 
 nav {
-  margin: 3rem 0rem;
+  margin: 2rem 0rem;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -12,15 +12,16 @@ nav {
     justify-content: space-between;
     list-style-type: none;
     margin-right: 3rem;
-    width: 30%;
 
     li a {
-      font-size: 1.1rem;
+      color: c.$black;
+      font-size: 1rem;
       text-decoration: none;
       transition: all 0.2s;
+      margin: 0rem 50px;
 
       &:visited {
-        color: inherit;
+        color: c.$black;
       }
 
       &:hover {
@@ -39,7 +40,6 @@ nav {
   height: 75px;
   background: url('../../assets/logo/Logo.svg') no-repeat;
   margin-left: 3rem;
-  //transition: all 0.2s ease-in-out;
 
   &:hover {
     background: url('../../assets/logo/LogoHover.svg') no-repeat;

@@ -1,0 +1,88 @@
+@use "../../colors.scss" as c;
+
+#about, #aboutM {
+  margin: 6rem 15vw;
+  display: flex;
+  justify-content: center;
+}
+
+#aboutM {
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 10vw;
+}
+
+#aboutImages, #aboutImagesM {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    width: 250px;
+    margin-bottom: 1rem;
+  }
+}
+
+#aboutImagesM {
+  img {
+    width: 50vw;
+    margin: 1rem;
+  }
+}
+
+#aboutText, #aboutTextM {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+
+  h2 {
+    font-weight: 400;
+    color: c.$primary;
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin: 0.8rem 0rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+    margin: 0rem;
+    color: c.$primary;
+
+    &:hover {
+      color: c.$secondary;
+    }
+
+    &:visited {
+      color: c.$primary;
+    }
+  }
+
+  #resume {
+    width: 75px;
+    font-size: 1.2rem;
+    background: transparent;
+    border: c.$primary 1px solid;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+    margin-top: 1rem;
+  
+    &:hover {
+      color: c.$white;
+      background: c.$primary;
+      text-decoration: none;
+    }
+  }
+}
+
+#aboutTextM {
+  margin: 0;
+
+  #resume {
+    margin: 2rem 0rem;
+    align-self: center;
+  }
+}
+
