@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Switch, Route, NavLink } from 'react-router-dom';
 import './style.scss';
+import { FiMenu } from 'react-icons/fi';
+import { IoMdClose } from 'react-icons/io';
 import Work from '../screens/WORK';
 import Play from '../screens/PLAY';
 import About from '../screens/ABOUT';
@@ -21,15 +23,39 @@ const NavSwitch = (props) => {
   );
 };
 
+const MobileNav = (props) => {
+  const [clicked, setClicked] = useState(false);
+  return (
+    <div id="mobileNav">
+      <div id="menuIcon">
+        <FiMenu onClick={() => setClicked(true)} />
+      </div>
+
+      <ul className={clicked ? 'navMenu active' : 'navMenu'}>
+        <div id="closeIcon">
+          <IoMdClose onClick={() => setClicked(false)} />
+        </div>
+
+        <li><NavLink to="/" exact onClick={() => setClicked(false)}>WORK</NavLink></li>
+        <li><NavLink to="/play" onClick={() => setClicked(false)}>PLAY</NavLink></li>
+        <li><NavLink to="/about" onClick={() => setClicked(false)}>ABOUT</NavLink></li>
+      </ul>
+    </div>
+  );
+};
+
 const NavLinks = (props) => {
   return (
     <nav>
-      <div id="logo" />
-      <ul>
-        <li><NavLink to="/" exact>WORK</NavLink></li>
-        <li><NavLink to="/play">PLAY</NavLink></li>
-        <li><NavLink to="/about">ABOUT</NavLink></li>
-      </ul>
+      <div id={props.mobile ? 'logoMobile' : 'logo'} />
+      {props.mobile ? <MobileNav />
+        : (
+          <ul>
+            <li><NavLink to="/" exact>WORK</NavLink></li>
+            <li><NavLink to="/play">PLAY</NavLink></li>
+            <li><NavLink to="/about">ABOUT</NavLink></li>
+          </ul>
+        )}
     </nav>
   );
 };
@@ -37,7 +63,7 @@ const NavLinks = (props) => {
 const Navbar = (props) => {
   return (
     <div>
-      <NavLinks mobile={props.moblile} />
+      <NavLinks mobile={props.mobile} />
       <NavSwitch mobile={props.mobile} />
     </div>
   );

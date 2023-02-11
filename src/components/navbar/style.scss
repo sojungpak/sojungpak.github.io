@@ -1,7 +1,7 @@
 @use "../colors.scss" as c;
 
 nav {
-  margin: 2rem 0rem;
+  padding: 2rem 0rem;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@ nav {
   color: c.$primary !important;
 }
 
-#logo {
+#logo, #logoMobile {
   width: 75px;
   height: 75px;
   background: url('../../assets/logo/Logo.svg') no-repeat;
@@ -44,4 +44,52 @@ nav {
   &:hover {
     background: url('../../assets/logo/LogoHover.svg') no-repeat;
   }
+}
+
+#logoMobile {
+  margin-left: 2rem;
+}
+
+#mobileNav {
+  font-size: 3rem;
+  color: c.$primary;
+
+  #menuIcon {
+    margin-right: 2rem;
+  }
+}
+
+.navMenu {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  position: fixed;
+  margin: auto;
+  right: -100%;
+  top: 5vh;
+  opacity: 1;
+  transition: all 0.5s ease;
+
+  li {
+    padding-bottom: 1rem;
+  }
+
+  #closeIcon {
+    font-size: 2rem;
+    align-self: flex-end;
+    line-height: 0;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+.navMenu.active {
+  background-color: c.$white;
+  border-radius: 0.25rem;
+  left: 0%;
+  right: 0%;
+  list-style: none;
+  border: c.$secondary 2px solid;
+  transition: all 0.5s ease;
+  z-index: 1;
 }
