@@ -1,0 +1,47 @@
+@use "../../constants/colors" as c;
+
+nav {
+  margin: 3rem 0rem;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-right: 3rem;
+    width: 30%;
+
+    li a {
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: all 0.2s;
+
+      &:visited {
+        color: inherit;
+      }
+
+      &:hover {
+        color: c.$secondary;
+      }
+    }
+  }
+}
+
+.active {
+  color: c.$primary !important;
+}
+
+#logo {
+  width: 75px;
+  height: 75px;
+  background: url('../../assets/logo/Logo.svg') no-repeat;
+  margin-left: 3rem;
+  //transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: url('../../assets/logo/LogoHover.svg') no-repeat;
+  }
+}

@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
 } from 'react-router-dom';
 
-import Navbar from './nav/navbar';
+import Navbar from './navbar';
 
 const App = (props) => {
   return (

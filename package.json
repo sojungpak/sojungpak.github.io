@@ -1,5 +1,5 @@
 {
-  "name": "starterpack-basic",
+  "name": "sojungpak.github.io",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JY2452/starterpack-basic.git"
+    "url": "git+https://github.com/sojungpak/sojungpak.github.io"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JY2452/starterpack-basic/issues"
+    "url": "https://github.com/sojungpak/sojungpak.github.io/issues"
   },
-  "homepage": "https://github.com/JY2452/starterpack-basic#readme",
+  "homepage": "https://github.com/sojungpak/sojungpak.github.io#readme",
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@babel/eslint-parser": "^7.14.7",
