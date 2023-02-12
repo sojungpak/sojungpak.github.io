@@ -1,1 +1,75 @@
 @use "../../colors.scss" as c;
+
+#work, #workM {
+  margin: 2rem 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  #workText {
+    max-width: 750px;
+    
+    h1 {
+      color: c.$primary;
+      font-size: 2.5rem;
+    }
+
+    #stars {
+      font-size: 1.4rem;
+      margin: 0.2rem 0rem;
+    }
+
+    #description {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+
+      b {
+        color: c.$primary;
+        font-weight: 400;
+      }
+    }
+
+    #starList {
+      margin-bottom: 1.5rem;
+    }
+
+    #caci {
+      font-size: 0.9rem;
+      margin: 0rem;
+      color: c.$primary;
+      text-decoration: underline;
+
+      &:hover {
+        color: c.$secondary !important;
+      }
+
+      &:visited {
+        color: c.$primary;
+      }
+    }
+  } 
+}
+
+#workM {
+  padding-top: 8rem;
+}
+
+@for $i from 1 through 33 {
+  #--i#{$i} {
+    display: inline-block;
+    animation: waviy 0.8s infinite;
+    animation-delay: calc(.05s * #{$i}); 
+  }
+}
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+
+  20% {
+    transform: translateY(-8px)
+  }
+}
+

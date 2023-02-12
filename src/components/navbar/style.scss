@@ -46,16 +46,30 @@ nav {
   }
 }
 
-#logoMobile {
-  margin-left: 2rem;
+#navMobile {
+  position: fixed;
+  top: 0;
+  padding: 1rem 0rem;
+  background-color: c.$white;
+  
+  #logo {
+    margin-left: 2rem;
+  }
 }
 
-#mobileNav {
+#navMobileRow {
   font-size: 3rem;
   color: c.$primary;
 
   #menuIcon {
     margin-right: 2rem;
+  }
+
+  #menuIcon, #closeIcon {
+    &:hover {
+      color: c.$secondary;
+      cursor: pointer;
+    }
   }
 }
 
@@ -66,7 +80,7 @@ nav {
   position: fixed;
   margin: auto;
   right: -100%;
-  top: 5vh;
+  top: 16vh;
   opacity: 1;
   transition: all 0.5s ease;
 

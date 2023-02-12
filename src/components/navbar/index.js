@@ -14,7 +14,7 @@ const Test = (props) => {
 const NavSwitch = (props) => {
   return (
     <Switch>
-      <Route exact path="/" render={() => <Work />} />
+      <Route exact path="/" render={() => <Work mobile={props.mobile} />} />
       <Route exact path="/play" component={Play} />
       <Route exact path="/about" render={() => <About mobile={props.mobile} />} />
       <Route exact path="/work/:id" component={Test} />
@@ -26,7 +26,7 @@ const NavSwitch = (props) => {
 const MobileNav = (props) => {
   const [clicked, setClicked] = useState(false);
   return (
-    <div id="mobileNav">
+    <div id="navMobileRow">
       <div id="menuIcon">
         <FiMenu onClick={() => setClicked(true)} />
       </div>
@@ -46,8 +46,8 @@ const MobileNav = (props) => {
 
 const NavLinks = (props) => {
   return (
-    <nav>
-      <div id={props.mobile ? 'logoMobile' : 'logo'} />
+    <nav id={props.mobile ? 'navMobile' : 'nav'}>
+      <a href="/" aria-label="home"><div id="logo" /></a>
       {props.mobile ? <MobileNav />
         : (
           <ul>
