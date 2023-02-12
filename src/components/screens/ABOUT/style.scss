@@ -4,6 +4,8 @@
   margin: 6rem 15vw;
   display: flex;
   justify-content: center;
+  max-width: 1000px;
+  align-self: center;
 }
 
 #aboutM {
@@ -69,6 +71,7 @@
     border-radius: 0.5rem;
     transition: all 0.5s;
     margin-top: 1rem;
+    text-align: center;
   
     &:hover {
       color: c.$white;

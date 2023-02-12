@@ -1,5 +1,7 @@
 import React from 'react';
 import './style.scss';
+import Thumbnail from './thumbnail';
+import WorkItems from './work_items';
 
 const Work = (props) => {
   return (
@@ -49,9 +51,18 @@ const Work = (props) => {
         </p>
 
         <div id="starList">
-          <p>☆ storytelling for immersion</p>
-          <p>☆ human behavior, social relationships, and culture</p>
-          <p>☆ inclusive and accessible designs</p>
+          <div>
+            <p className="star">☆</p>
+            <p>storytelling for immersion</p>
+          </div>
+          <div>
+            <p className="star">☆</p>
+            <p>human behavior, social relationships, and culture</p>
+          </div>
+          <div className="star">
+            <p className="star">☆</p>
+            <p>inclusive and accessible designs</p>
+          </div>
         </div>
 
         <p>Previously, a Graphic Design Intern @&nbsp;
@@ -64,6 +75,15 @@ const Work = (props) => {
           </a>
         </p>
       </div>
+
+      <div id="thumbnails">
+        {WorkItems.map((item) => {
+          return (
+            <Thumbnail data={item} key={item.name} mobile={props.mobile} />
+          );
+        })}
+      </div>
+
     </div>
   );
 };

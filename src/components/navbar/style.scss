@@ -15,7 +15,7 @@ nav {
 
     li a {
       color: c.$black;
-      font-size: 1rem;
+      font-size: min(1.8vw, 20px);
       text-decoration: none;
       transition: all 0.2s;
       margin: 0rem 50px;
@@ -51,7 +51,8 @@ nav {
   top: 0;
   padding: 1rem 0rem;
   background-color: c.$white;
-  
+  z-index: 1;
+
   #logo {
     margin-left: 2rem;
   }
@@ -86,6 +87,11 @@ nav {
 
   li {
     padding-bottom: 1rem;
+    font-size: 2rem;
+
+    a {
+      font-size: 1.2rem;
+    }
   }
 
   #closeIcon {

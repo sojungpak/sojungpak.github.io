@@ -5,9 +5,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 1300px;
+  align-self: center;
   
   #workText {
-    max-width: 750px;
+    max-width: 700px;
     
     h1 {
       color: c.$primary;
@@ -32,6 +34,14 @@
 
     #starList {
       margin-bottom: 1.5rem;
+
+      div {
+        display: flex;
+
+        .star {
+          margin-right: 10px;
+        }
+      }
     }
 
     #caci {
@@ -48,11 +58,38 @@
         color: c.$primary;
       }
     }
-  } 
+  }
+  
+  #thumbnails {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
 }
 
 #workM {
   padding-top: 8rem;
+
+  #workText {
+    h1 {
+      font-size: 2rem;
+    }
+
+    #stars, #description {
+      //font-size: 1.2rem;
+    }
+
+    p, #caci {
+      //font-size: 0.75rem;
+    }
+  }
+
+  #thumbnails {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @for $i from 1 through 33 {
@@ -72,4 +109,3 @@
     transform: translateY(-8px)
   }
 }
-

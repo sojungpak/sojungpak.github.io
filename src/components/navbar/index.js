@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Switch, Route, NavLink } from 'react-router-dom';
+import {
+  Switch, Route, NavLink, Redirect,
+} from 'react-router-dom';
 import './style.scss';
 import { FiMenu } from 'react-icons/fi';
 import { IoMdClose } from 'react-icons/io';
@@ -11,6 +13,10 @@ const Test = (props) => {
   return <div>{props.match.params.id}</div>;
 };
 
+const Error = () => {
+  return <Redirect exact to="/" />;
+};
+
 const NavSwitch = (props) => {
   return (
     <Switch>
@@ -18,7 +24,7 @@ const NavSwitch = (props) => {
       <Route exact path="/play" component={Play} />
       <Route exact path="/about" render={() => <About mobile={props.mobile} />} />
       <Route exact path="/work/:id" component={Test} />
-      <Route component={Work} />
+      <Route component={Error} />
     </Switch>
   );
 };
@@ -62,7 +68,7 @@ const NavLinks = (props) => {
 
 const Navbar = (props) => {
   return (
-    <div>
+    <div id="app">
       <NavLinks mobile={props.mobile} />
       <NavSwitch mobile={props.mobile} />
     </div>
