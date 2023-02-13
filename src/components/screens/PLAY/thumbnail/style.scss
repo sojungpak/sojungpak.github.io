@@ -1,0 +1,17 @@
+@use "../../../colors.scss" as c;
+
+#play, #playM {
+  .thumbnail, .thumbnailM {
+    h2 {
+      font-weight: 400;
+      font-size: min(1.85vw, 25px);
+      color: c.$primary;
+      margin-top: 1rem;
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  .thumbnailM h2 {
+    font-size: 1rem;
+  }
+}

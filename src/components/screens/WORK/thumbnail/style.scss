@@ -2,7 +2,7 @@
 
 $width : 35vw;
 $maxwidth : 600px;
-$maxheight: 340px;
+$maxheight: 345px;
 
 .thumbnail, .thumbnailM {
   display: flex;
@@ -49,14 +49,14 @@ $maxheight: 340px;
   .imgZoom {
     width: $width;
     max-width: $maxwidth;
-    height: 20vw;
+    height: 20.2vw;
     max-height: $maxheight;
     overflow: hidden; /* [1.2] Hide the overflowing of child elements */
 
     img {
       width: $width;
       max-width: $maxwidth;
-      height: 20vw;
+      height: 20.2vw;
       max-height: $maxheight;
       object-fit: cover;
       transition: transform .5s ease;
@@ -66,6 +66,7 @@ $maxheight: 340px;
   p {
     font-weight: 300;
     font-size: 0.9rem;
+    color: c.$black;
   }
 
   a {

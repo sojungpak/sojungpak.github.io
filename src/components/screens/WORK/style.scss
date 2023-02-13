@@ -1,7 +1,8 @@
 @use "../../colors.scss" as c;
 
 #work, #workM {
-  margin: 2rem 10vw;
+  margin: 1rem 10vw;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,18 +72,11 @@
 
 #workM {
   padding-top: 8rem;
+  margin-top: 1rem;
 
   #workText {
     h1 {
       font-size: 2rem;
-    }
-
-    #stars, #description {
-      //font-size: 1.2rem;
-    }
-
-    p, #caci {
-      //font-size: 0.75rem;
     }
   }
 

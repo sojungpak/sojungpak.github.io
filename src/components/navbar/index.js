@@ -21,7 +21,7 @@ const NavSwitch = (props) => {
   return (
     <Switch>
       <Route exact path="/" render={() => <Work mobile={props.mobile} />} />
-      <Route exact path="/play" component={Play} />
+      <Route exact path="/play" render={() => <Play mobile={props.mobile} />} />
       <Route exact path="/about" render={() => <About mobile={props.mobile} />} />
       <Route exact path="/work/:id" component={Test} />
       <Route component={Error} />
