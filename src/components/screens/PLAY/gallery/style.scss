@@ -1,0 +1,24 @@
+@use "../../../colors.scss" as c;
+
+#playGallery, #playGalleryM {
+  margin: 1rem 10vw;
+  margin-top: 4rem;
+  max-width: 1300px;
+}
+
+#playGalleryM {
+  margin-top: 8rem;
+}
+
+#photoGallery {
+  display: flex;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}

@@ -8,6 +8,7 @@ import { IoMdClose } from 'react-icons/io';
 import Work from '../screens/WORK';
 import Play from '../screens/PLAY';
 import About from '../screens/ABOUT';
+import PlayGallery from '../screens/PLAY/gallery';
 
 const Test = (props) => {
   return <div>{props.match.params.id}</div>;
@@ -17,6 +18,10 @@ const Error = () => {
   return <Redirect exact to="/" />;
 };
 
+const Gallery = (props) => {
+  return <PlayGallery type={props.type} mobile={props.mobile} />;
+};
+
 const NavSwitch = (props) => {
   return (
     <Switch>
@@ -24,6 +29,7 @@ const NavSwitch = (props) => {
       <Route exact path="/play" render={() => <Play mobile={props.mobile} />} />
       <Route exact path="/about" render={() => <About mobile={props.mobile} />} />
       <Route exact path="/work/:id" component={Test} />
+      <Route exact path="/play/:id" render={(c) => <Gallery mobile={props.mobile} type={c.match.params.id} />} />
       <Route component={Error} />
     </Switch>
   );
