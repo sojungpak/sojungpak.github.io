@@ -5,14 +5,19 @@ import {
 import './style.scss';
 import { FiMenu } from 'react-icons/fi';
 import { IoMdClose } from 'react-icons/io';
+
 import Work from '../screens/WORK';
+import ARTour from '../screens/WORK/pages/artour';
+import CACI from '../screens/WORK/pages/caci';
+import MireLee from '../screens/WORK/pages/mirelee';
+import PGHWaterQuality from '../screens/WORK/pages/pghwaterquality';
+import PolkaDotPoisonFrogs from '../screens/WORK/pages/polkadotpoisonfrogs';
+import Typography from '../screens/WORK/pages/typography';
+
 import Play from '../screens/PLAY';
-import About from '../screens/ABOUT';
 import PlayGallery from '../screens/PLAY/gallery';
 
-const Test = (props) => {
-  return <div>{props.match.params.id}</div>;
-};
+import About from '../screens/ABOUT';
 
 const Error = () => {
   return <Redirect exact to="/" />;
@@ -28,7 +33,12 @@ const NavSwitch = (props) => {
       <Route exact path="/" render={() => <Work mobile={props.mobile} />} />
       <Route exact path="/play" render={() => <Play mobile={props.mobile} />} />
       <Route exact path="/about" render={() => <About mobile={props.mobile} />} />
-      <Route exact path="/work/:id" component={Test} />
+      <Route exact path="/work/artour" render={() => <ARTour mobile={props.mobile} />} />
+      <Route exact path="/work/caci" render={() => <CACI mobile={props.mobile} />} />
+      <Route exact path="/work/mirelee" render={() => <MireLee mobile={props.mobile} />} />
+      <Route exact path="/work/pghwaterquality" render={() => <PGHWaterQuality mobile={props.mobile} />} />
+      <Route exact path="/work/polkadotpoisonfrogs" render={() => <PolkaDotPoisonFrogs mobile={props.mobile} />} />
+      <Route exact path="/work/typography" render={() => <Typography mobile={props.mobile} />} />
       <Route exact path="/play/:id" render={(c) => <Gallery mobile={props.mobile} type={c.match.params.id} />} />
       <Route component={Error} />
     </Switch>

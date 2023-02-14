@@ -1,0 +1,102 @@
+@use "../../../../colors.scss" as c;
+
+.header, .headerM {
+  display: flex;
+  flex-direction: column;
+
+  h2, h3, h4 {
+    font-weight: 700;
+    color: c.$primary;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-weight: 400;
+  }
+  
+  .tags {
+    display: flex;
+    margin: 0.5rem 0rem;
+
+    p {
+      background-color: c.$primary;
+      color: c.$white;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.4rem;
+      margin-left: 0.2rem;
+      margin-right: 0.5rem;
+      text-align: center;
+    }
+  }
+
+  .task {
+    margin: 1rem 0rem;
+  }
+
+  .descriptionRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+  }
+
+  .process {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    margin-top: 3rem;
+
+    a {
+      width: 75px;
+      font-size: 1rem;
+      background: transparent;
+      border: c.$primary 1px solid;
+      padding: 0.4rem 1.5rem;
+      border-radius: 0.5rem;
+      transition: all 0.5s;
+      margin: 0.5rem 0rem;
+      text-align: center;
+      color: c.$primary;
+  
+      &:hover {
+        color: c.$white;
+        background: c.$primary;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.headerM {
+  .descriptionRow {
+    flex-wrap: wrap;
+    margin: 0rem;
+
+    .description {
+      width: 38vw;
+      margin: 0.7rem 0rem;
+
+      p, h4 {
+        font-size: min(3.4vw, 0.9rem);
+      }
+    }
+  }
+
+  .process {
+    font-size: min(3.8vw, 1rem);
+    margin-top: 2rem;
+
+    a {
+      font-size: min(3.5vw, 1rem);
+      padding: 0.4rem 0.5rem;
+      width: 40%;
+    }
+  }
+}

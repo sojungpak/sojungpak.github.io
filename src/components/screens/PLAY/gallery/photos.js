@@ -53,7 +53,7 @@ import s10 from '../../../../assets/play/sketchbook/s10.jpeg';
 const Photos = {
   traditional: {
     layout: 'columns',
-    number: '3',
+    number: 3,
     photos: [
       {
         src: t1,
@@ -125,7 +125,7 @@ const Photos = {
   },
   digital: {
     layout: 'columns',
-    number: '4',
+    number: 4,
     photos: [
       {
         src: d1,
