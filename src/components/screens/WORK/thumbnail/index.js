@@ -8,7 +8,7 @@ const Thumbnail = (props) => {
       <NavLink to={`/work/${props.data.path}`}>
 
         <div className="imgZoom">
-          <img src={props.data.image} alt="thumbnail" />
+          <img src={props.data.image} alt="thumbnail" loading="eager" />
         </div>
 
         <div className="titleRow">

@@ -20,7 +20,6 @@ const PlayGallery = (props) => {
     setViewerIsOpen(false);
   };
 
-  if (!source.photos.length) return null;
   return (
     <div id={props.mobile ? 'playGalleryM' : 'playGallery'}>
 
