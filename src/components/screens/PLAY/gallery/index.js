@@ -20,9 +20,15 @@ const PlayGallery = (props) => {
     setViewerIsOpen(false);
   };
 
+  if (!source.photos.length) return null;
   return (
     <div id={props.mobile ? 'playGalleryM' : 'playGallery'}>
-      <PhotoAlbum photos={source.photos} layout={props.mobile ? 'columns' : source.layout} columns={props.mobile ? 1 : source.number} onClick={({ index }) => openLightbox(index)} />
+
+      <PhotoAlbum photos={source.photos}
+        layout={props.mobile ? 'columns' : source.layout}
+        onClick={({ index }) => openLightbox(index)}
+        columns={props.mobile ? 1 : 3}
+      />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
