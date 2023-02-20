@@ -83,7 +83,7 @@ const Typography = (props) => {
 
         <h2>3 - Animation</h2>
         <h3>60-second video that highlights the unique characteristics and personality of Didot in the context of its use</h3>
-        <div className="vidPlaceHolder" />
+        <iframe className="video" src="https://www.youtube.com/embed/ynSJrCEVBIY" title="Animation Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
       </div>
 
       <ModalGateway>

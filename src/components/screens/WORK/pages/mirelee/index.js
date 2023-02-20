@@ -107,11 +107,11 @@ const MireLee = (props) => {
         <h3>Lo-Fi Prototype (LittleBits)</h3>
         <div id="interactions" className="row">
           <img src={photos[10].src} alt="work" onClick={() => openLightbox(10)} />
-          <iframe className="video" src="https://www.youtube.com/embed/eEzD-Y97ges" title="Animation Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+          <iframe className="video" src="https://www.youtube.com/embed/tFo6o18lJqk" title="Little Bits" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
         </div>
 
         <div className="interactionRow">
-          <iframe className="video" src="https://www.youtube.com/embed/eEzD-Y97ges" title="Animation Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+          <iframe className="video" src="https://www.youtube.com/embed/EVQcDAtg1Gw" title="Interaction 1" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
           <div className="text">
             <h2>Interaction 1</h2>
             <h3>Introduction to the Space</h3>
@@ -125,11 +125,11 @@ const MireLee = (props) => {
             <h3>Materials: Sound and Movement</h3>
             <p>Vore has to do with a desire for unification with another being, which inspired this space where it turns from an individual to group experience. Also acts as a transition to the next area where “vore” is physically experienced, in which visitors feel as if they are being consumed by the environment. Videos taken from “Carriers” (2020). </p>
           </div>
-          <iframe className="video" src="https://www.youtube.com/embed/eEzD-Y97ges" title="Animation Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+          <iframe className="video" src="https://www.youtube.com/embed/pmvBRiCuz-4" title="Interaction 2" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
         </div>
 
         <div className="interactionRow">
-          <iframe className="video" src="https://www.youtube.com/embed/eEzD-Y97ges" title="Animation Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+          <iframe className="video" src="https://www.youtube.com/embed/N8FiE7pOHlw" title="Interaction 3" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
           <div className="text">
             <h2>Interaction 3</h2>
             <h3>Vorarephilia</h3>
