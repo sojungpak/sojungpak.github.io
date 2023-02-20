@@ -135,17 +135,18 @@
     }
 
     .interactionRow {
-      .vidPlaceHolder {
+
+      .video {
         width: 38vw;
         margin: 0;
       }
 
       div {
-        width: 35vw;
+        width: 38vw;
       }
     }
 
-    .vidPlaceHolder {
+    .video {
       width: 38vw;
       height: 21.5vw;
     }
@@ -204,8 +205,9 @@
       }
     }
 
-    .vidPlaceHolder {
+    .video {
       width: 80vw;
+      height: 45vw;
     }
 
     #midRow {
@@ -220,8 +222,9 @@
         margin-bottom: 1rem;
       }
 
-      .vidPlaceHolder {
+      .video {
         width: 80vw;
+        height: 45vw;
         margin: 0;
       }
 

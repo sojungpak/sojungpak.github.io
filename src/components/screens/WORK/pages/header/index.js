@@ -8,7 +8,7 @@ const Header = (props) => {
       <div>
         <h2>{props.data.name}</h2>
         <div className="tags">
-          {props.data.tags.map((tag) => <p>{tag}</p>)}
+          {props.data.tags.map((tag) => <p key={tag}>{tag}</p>)}
         </div>
       </div>
 
@@ -26,17 +26,17 @@ const Header = (props) => {
 
         <div className="description">
           <h4>Collaborators</h4>
-          {props.data.collaborators.map((collaborator) => <p>{collaborator}</p>)}
+          {props.data.collaborators.map((collaborator) => <p key={collaborator}>{collaborator}</p>)}
         </div>
 
         <div className="description">
           <h4>Skills</h4>
-          {props.data.skills.map((skill) => <p>{skill}</p>)}
+          {props.data.skills.map((skill) => <p key={skill}>{skill}</p>)}
         </div>
 
         <div className="description">
           <h4>Programs</h4>
-          {props.data.programs.map((program) => <p>{program}</p>)}
+          {props.data.programs.map((program) => <p key={program}>{program}</p>)}
         </div>
       </div>
 

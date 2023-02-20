@@ -60,8 +60,8 @@ const PolkaDotPoisonFrogs = (props) => {
         </div>
 
         <h2>3 - Stop-Motion Animation</h2>
-        <h3>Animation that speaks to the relationship between the animals and their environment, with a focus on the behavior </h3>
-        <div className="vidPlaceHolder" />
+        <h3>Animation that speaks to the relationship between the animals and their environment, with a focus on the behavior</h3>
+        <iframe className="video" src="https://www.youtube.com/embed/eEzD-Y97ges" title="Animation Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
       </div>
 
       <ModalGateway>

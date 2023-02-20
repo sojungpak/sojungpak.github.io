@@ -39,7 +39,7 @@ const ARTour = (props) => {
 
       <div id="arWork">
         <h2>Final Tour Experience</h2>
-        <div className="vidPlaceHolder" />
+        <iframe className="video" src="https://www.youtube.com/embed/eEzD-Y97ges" title="Animation Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
         <h2>Initial Research</h2>
         <h3>Identifying Current Weaknesses</h3>

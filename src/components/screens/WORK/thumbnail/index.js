@@ -16,7 +16,7 @@ const Thumbnail = (props) => {
           <div className="tags">
             {props.data.tags.map((tag) => {
               return (
-                <p>{tag}</p>
+                <p key={tag}>{tag}</p>
               );
             })}
           </div>
