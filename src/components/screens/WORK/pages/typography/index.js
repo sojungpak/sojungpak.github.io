@@ -83,7 +83,7 @@ const Typography = (props) => {
 
         <h2>3 - Animation</h2>
         <h3>60-second video that highlights the unique characteristics and personality of Didot in the context of its use</h3>
-        <div id="vidPlaceHolder" />
+        <div className="vidPlaceHolder" />
       </div>
 
       <ModalGateway>
