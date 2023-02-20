@@ -1,1 +1,92 @@
 @use "../../../../colors.scss" as c;
+
+.workPage {
+  #typographyWork {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-top: 1rem;
+    }
+
+    .posterImages {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0;
+
+      #left {
+        height: 57.3vw;
+      }
+
+      #right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 57.3vw;
+
+        .row {
+          display: flex;
+          justify-content: space-between;
+
+          img {
+            height: 18.3vw;
+            width: 12vw;
+            margin: 0 0.5rem;
+
+            &:hover {
+              transform: scale(1.03);
+            }
+          }
+        }
+
+        #row2 {
+          margin: 0.7rem 0;
+        }
+      }
+    }
+
+    .spreadImages {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0;
+
+      #left {
+        height: 30vw;
+      }
+
+      #right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30vw;
+
+        .row {
+          display: flex;
+          justify-content: space-between;
+
+          img {
+            height: 9.1vw;
+            width: 15vw;
+            margin: 0 0.5rem;
+
+            &:hover {
+              transform: scale(1.03);
+            }
+          }
+        }
+
+        #row2 {
+          margin: 0.7rem 0;
+        }
+      }
+    }
+
+    #vidPlaceHolder {
+      align-self: center;
+      background-color: black;
+      margin: 2rem;
+      width: 50vw;
+      height: 35vw;
+    }
+  }
+}
