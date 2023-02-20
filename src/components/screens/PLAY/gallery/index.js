@@ -9,7 +9,6 @@ const PlayGallery = (props) => {
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
   const source = photos[props.type];
 
-  // eslint-disable-next-line no-unused-vars
   const openLightbox = (index) => {
     setCurrentImage(index);
     setViewerIsOpen(true);
