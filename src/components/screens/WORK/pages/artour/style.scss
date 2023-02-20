@@ -1,14 +1,2 @@
 @use "../../../../colors.scss" as c;
 
-.workPage, .workPageM {
-  margin: 1rem 10vw;
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1300px;
-}
-
-.workPageM {
-  padding-top: 4rem;
-}

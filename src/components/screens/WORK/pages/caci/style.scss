@@ -1,90 +1,67 @@
 @use "../../../../colors.scss" as c;
 
-.workPage, .workPageM {
-  margin: 1rem 10vw;
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1300px;
-
-  h2 {
-    color: c.$primary;
-    margin-bottom: 1.5rem;
-  }
-
-  img {
-    transition: transform 0.2s;
-
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.01);
-    }
-  }
-}
-
 .workPage {
-  .images {
-    display: flex;
-    flex-direction: column;
-    width: 80vw;
-    margin-bottom: 1rem;
+  #caciWork {
 
-    .rowOne {
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    .images {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 3rem;
+      flex-direction: column;
+      width: 80vw;
+      margin-bottom: 1rem;
 
-      .colOne {
+      .rowOne {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        height: 30vw;
+        align-items: flex-start;
+        margin-bottom: 3rem;
 
-        img {
-          height: 14vw;
-          object-fit: contain;
+        .colOne {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 30vw;
+
+          img {
+            height: 14vw;
+          }
+        }
+
+        #img1, #img2 {
+          height: 30vw;
         }
       }
 
-      #img1 {
-        height: 30vw;
-        object-fit: contain;
-      }
+      .rowTwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
 
-      #img2 {
-        height: 30vw;
-        object-fit: contain;
-      }
-
-    }
-
-    .rowTwo {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-
-      img {
-        height: 35vw;
-        object-fit: contain;
+        img {
+          height: 35vw;
+        }
       }
     }
   }
 }
 
 .workPageM {
-  padding-top: 4rem;
+  #caciWork  {
+    padding-top: 4rem;
 
-  .images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    .images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-    img {
-      width: 80vw;
-      margin: 1rem 0rem;
+      img {
+        width: 80vw;
+        margin: 1rem 0rem;
+      }
     }
   }
 }

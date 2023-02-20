@@ -107,3 +107,35 @@
     transform: translateY(-8px)
   }
 }
+
+.workPage, .workPageM {
+  margin: 1rem 10vw;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1300px;
+
+  h2, h3 {
+    color: c.$primary;
+    margin-bottom: 0.5rem;
+  } 
+
+  h3 {
+    margin: 0.2rem 0rem;
+  }
+
+  img {
+    transition: transform 0.2s;
+    object-fit: contain;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+    }
+  }
+}
+
+.workPageM {
+  padding-top: 4rem;
+}

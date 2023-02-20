@@ -1,14 +1,99 @@
 @use "../../../../colors.scss" as c;
 
-.workPage, .workPageM {
-  margin: 1rem 10vw;
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1300px;
+.workPage {
+  #pghWork {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+
+    .pics {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #map {
+      width: 40vw;
+      align-self: center;
+      margin: 1rem 0;
+    }
+
+    #research {
+      margin-top: 3rem;
+    }
+
+    #brainstorming {
+
+      h3 {
+        margin: 1rem 0;
+      }
+
+      .pics img {
+        height: 18vw;
+      }
+    }
+
+    #vdesign {
+      h2 {
+        margin: 2rem 0;
+      }
+
+      .pics img {
+        height: 26vw;
+      }
+    }
+
+    #bRow {
+      margin: 2rem 0;
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        margin: 1rem 0rem;
+      }
+
+      .lCol {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        img {
+          width: 40vw;
+          height: 18vw;
+          object-fit: cover;
+        }
+      }
+
+      img {
+        height: 42vw;
+      }
+    }
+  }
 }
 
 .workPageM {
-  padding-top: 4rem;
+  #pghWork {
+    padding-top: 4rem;
+
+    h2 {
+      margin: 1rem 0;
+    }
+
+    #brainstorming {
+
+      h3 {
+        margin-top: 1rem;
+      }
+    }
+
+    img {
+      width: 80vw;
+      margin: 1rem 0rem;
+    }
+  }
 }
