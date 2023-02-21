@@ -39,7 +39,7 @@ const PGHWaterQuality = (props) => {
 
       <div id="pghWork">
         <h2>Final Map</h2>
-        <img id="map" src={photos[0].src} alt="work" onClick={() => openLightbox(0)} />
+        <img id="map" src={photos[0].thumb} alt="work" onClick={() => openLightbox(0)} />
 
         <div id="research">
           <h2>Initial Research</h2>
@@ -51,17 +51,17 @@ const PGHWaterQuality = (props) => {
         <div id="brainstorming">
           <h3>Brainstorming and Mess-Mapping</h3>
           <div className="pics">
-            <img src={photos[1].src} alt="work" onClick={() => openLightbox(1)} />
-            <img src={photos[2].src} alt="work" onClick={() => openLightbox(2)} />
-            <img src={photos[3].src} alt="work" onClick={() => openLightbox(3)} />
+            <img src={photos[1].thumb} alt="work" onClick={() => openLightbox(1)} />
+            <img src={photos[2].thumb} alt="work" onClick={() => openLightbox(2)} />
+            <img src={photos[3].thumb} alt="work" onClick={() => openLightbox(3)} />
           </div>
         </div>
 
         <div id="vdesign">
           <h2>Visual Design</h2>
           <div className="pics">
-            <img src={photos[4].src} alt="work" onClick={() => openLightbox(4)} />
-            <img src={photos[5].src} alt="work" onClick={() => openLightbox(5)} />
+            <img src={photos[4].thumb} alt="work" onClick={() => openLightbox(4)} />
+            <img src={photos[5].thumb} alt="work" onClick={() => openLightbox(5)} />
           </div>
         </div>
 
@@ -69,17 +69,17 @@ const PGHWaterQuality = (props) => {
           <div className="lCol">
             <div>
               <h3>Parts of the Problem: Root Causes</h3>
-              <img src={photos[6].src} alt="work" onClick={() => openLightbox(6)} />
+              <img src={photos[6].thumb} alt="work" onClick={() => openLightbox(6)} />
             </div>
             <div>
               <h3>Proposed Interventions</h3>
-              <img src={photos[7].src} alt="work" onClick={() => openLightbox(7)} />
+              <img src={photos[7].thumb} alt="work" onClick={() => openLightbox(7)} />
             </div>
           </div>
 
           <div className="rCol">
             <h3>Feedback Loops</h3>
-            <img src={photos[8].src} alt="work" onClick={() => openLightbox(8)} />
+            <img src={photos[8].thumb} alt="work" onClick={() => openLightbox(8)} />
           </div>
         </div>
       </div>

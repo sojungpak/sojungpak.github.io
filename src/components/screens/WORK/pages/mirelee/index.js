@@ -50,9 +50,9 @@ const MireLee = (props) => {
         </p>
 
         <div className="row">
-          <img src={photos[0].src} alt="work" onClick={() => openLightbox(0)} />
-          <img src={photos[1].src} alt="work" onClick={() => openLightbox(1)} />
-          <img src={photos[2].src} alt="work" onClick={() => openLightbox(2)} />
+          <img src={photos[0].thumb} alt="work" onClick={() => openLightbox(0)} />
+          <img src={photos[1].thumb} alt="work" onClick={() => openLightbox(1)} />
+          <img src={photos[2].thumb} alt="work" onClick={() => openLightbox(2)} />
         </div>
 
         <h2>Initial Research</h2>
@@ -63,8 +63,8 @@ const MireLee = (props) => {
               <p>Visiting the CMOA, I saw Mire Lee’s sculpture “Untitled (My Pittsburgh Sculpture)” on display as part of the Carnegie International exhibit. Her kinetic sculptures reinterpret the living (internal systems of the body) through mechanical movements and materials as a way to display the anti-aesthetic. She explores themes of pain and vorarephilia, creating a metaphor for consuming the violence and pain we are confronted by.</p>
             </div>
             <div className="bottom">
-              <img id="img1" src={photos[3].src} alt="work" onClick={() => openLightbox(3)} />
-              <img id="img2" src={photos[4].src} alt="work" onClick={() => openLightbox(4)} />
+              <img id="img1" src={photos[3].thumb} alt="work" onClick={() => openLightbox(3)} />
+              <img id="img2" src={photos[4].thumb} alt="work" onClick={() => openLightbox(4)} />
             </div>
           </div>
 
@@ -75,7 +75,7 @@ const MireLee = (props) => {
               <p>For this reason, I visited the Miller ICA and observed the existing space for consideration as I designed the layout.</p>
             </div>
             <div className="bottom">
-              <img src={photos[5].src} alt="work" onClick={() => openLightbox(5)} />
+              <img src={photos[5].thumb} alt="work" onClick={() => openLightbox(5)} />
             </div>
           </div>
 
@@ -90,7 +90,7 @@ const MireLee = (props) => {
 
             <div className="bottom">
               <h3>Moodboard</h3>
-              <img src={photos[6].src} alt="work" onClick={() => openLightbox(6)} />
+              <img src={photos[6].thumb} alt="work" onClick={() => openLightbox(6)} />
             </div>
           </div>
         </div>
@@ -98,15 +98,15 @@ const MireLee = (props) => {
         <h2>Layout</h2>
         <h3>Parti Diagram</h3>
         <div className="row">
-          <img src={photos[7].src} alt="work" onClick={() => openLightbox(7)} />
-          <img src={photos[8].src} alt="work" onClick={() => openLightbox(8)} />
-          <img src={photos[9].src} alt="work" onClick={() => openLightbox(9)} />
+          <img src={photos[7].thumb} alt="work" onClick={() => openLightbox(7)} />
+          <img src={photos[8].thumb} alt="work" onClick={() => openLightbox(8)} />
+          <img src={photos[9].thumb} alt="work" onClick={() => openLightbox(9)} />
         </div>
 
         <h2>Interactions</h2>
         <h3>Lo-Fi Prototype (LittleBits)</h3>
         <div id="interactions" className="row">
-          <img src={photos[10].src} alt="work" onClick={() => openLightbox(10)} />
+          <img src={photos[10].thumb} alt="work" onClick={() => openLightbox(10)} />
           <iframe className="video" src="https://www.youtube.com/embed/tFo6o18lJqk" title="Little Bits" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
         </div>
 

@@ -50,24 +50,24 @@ const ARTour = (props) => {
         <div id="personaBuilding">
           <h3>Persona Building</h3>
           <div>
-            <img src={photos[0].src} alt="work" onClick={() => openLightbox(0)} />
-            <img src={photos[1].src} alt="work" onClick={() => openLightbox(1)} />
-            <img src={photos[2].src} alt="work" onClick={() => openLightbox(2)} />
+            <img src={photos[0].thumb} alt="work" onClick={() => openLightbox(0)} />
+            <img src={photos[1].thumb} alt="work" onClick={() => openLightbox(1)} />
+            <img src={photos[2].thumb} alt="work" onClick={() => openLightbox(2)} />
           </div>
         </div>
 
         <div id="storyboarding">
           <h2>Storyboarding</h2>
           <div>
-            <img src={photos[3].src} alt="work" onClick={() => openLightbox(3)} />
-            <img src={photos[4].src} alt="work" onClick={() => openLightbox(4)} />
-            <img src={photos[5].src} alt="work" onClick={() => openLightbox(5)} />
+            <img src={photos[3].thumb} alt="work" onClick={() => openLightbox(3)} />
+            <img src={photos[4].thumb} alt="work" onClick={() => openLightbox(4)} />
+            <img src={photos[5].thumb} alt="work" onClick={() => openLightbox(5)} />
           </div>
         </div>
 
         <h2>Interactions</h2>
         <div className="row">
-          <img src={photos[6].src} alt="work" onClick={() => openLightbox(6)} />
+          <img src={photos[6].thumb} alt="work" onClick={() => openLightbox(6)} />
           <div>
             <h2>Interaction 1</h2>
             <h3>Schedule</h3>
@@ -81,11 +81,11 @@ const ARTour = (props) => {
             <h3>Personalized Guide</h3>
             <p>A survey is provided at the beginning of the experience to gather information about the user’s interests, which is then used to create a match for a tour guide. This tour guide stays with the user throughout the experience, acting as a guide around the campus.</p>
           </div>
-          <img src={photos[7].src} alt="work" onClick={() => openLightbox(7)} />
+          <img src={photos[7].thumb} alt="work" onClick={() => openLightbox(7)} />
         </div>
 
         <div className="row">
-          <img src={photos[8].src} alt="work" onClick={() => openLightbox(8)} />
+          <img src={photos[8].thumb} alt="work" onClick={() => openLightbox(8)} />
           <div>
             <h2>Interaction 3</h2>
             <h3>Personal Anecdotes</h3>

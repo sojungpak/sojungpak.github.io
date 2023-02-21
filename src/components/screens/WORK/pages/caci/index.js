@@ -43,19 +43,19 @@ const CACI = (props) => {
         <div className="images">
           <div className="rowOne">
             <div className="colOne">
-              <img src={photos[0].src} alt="work" onClick={() => openLightbox(0)} />
-              <img src={photos[1].src} alt="work" onClick={() => openLightbox(1)} />
+              <img src={photos[0].thumb} alt="work" onClick={() => openLightbox(0)} />
+              <img src={photos[1].thumb} alt="work" onClick={() => openLightbox(1)} />
             </div>
 
-            <img id="img1" src={photos[2].src} alt="work" onClick={() => openLightbox(2)} />
-            <img id="img2" src={photos[3].src} alt="work" onClick={() => openLightbox(3)} />
+            <img id="img1" src={photos[2].thumb} alt="work" onClick={() => openLightbox(2)} />
+            <img id="img2" src={photos[3].thumb} alt="work" onClick={() => openLightbox(3)} />
           </div>
 
           <div className="rowTwo">
-            <img src={photos[4].src} alt="work" onClick={() => openLightbox(4)} />
-            <img src={photos[5].src} alt="work" onClick={() => openLightbox(5)} />
-            <img src={photos[6].src} alt="work" onClick={() => openLightbox(6)} />
-            <img src={photos[7].src} alt="work" onClick={() => openLightbox(7)} />
+            <img src={photos[4].thumb} alt="work" onClick={() => openLightbox(4)} />
+            <img src={photos[5].thumb} alt="work" onClick={() => openLightbox(5)} />
+            <img src={photos[6].thumb} alt="work" onClick={() => openLightbox(6)} />
+            <img src={photos[7].thumb} alt="work" onClick={() => openLightbox(7)} />
           </div>
         </div>
       </div>

@@ -41,22 +41,22 @@ const Typography = (props) => {
         <h2>1 - Poster</h2>
         <h3>ReelAbilities is the largest film festival for films about people with disabilities</h3>
         <div className="posterImages">
-          <img id="left" src={photos[0].src} alt="work" onClick={() => openLightbox(0)} />
+          <img id="left" src={photos[0].thumb} alt="work" onClick={() => openLightbox(0)} />
           <div id="right">
             <div className="row">
-              <img src={photos[1].src} alt="work" onClick={() => openLightbox(1)} />
-              <img src={photos[2].src} alt="work" onClick={() => openLightbox(2)} />
-              <img src={photos[3].src} alt="work" onClick={() => openLightbox(3)} />
+              <img src={photos[1].thumb} alt="work" onClick={() => openLightbox(1)} />
+              <img src={photos[2].thumb} alt="work" onClick={() => openLightbox(2)} />
+              <img src={photos[3].thumb} alt="work" onClick={() => openLightbox(3)} />
             </div>
             <div className="row" id="row2">
-              <img src={photos[4].src} alt="work" onClick={() => openLightbox(4)} />
-              <img src={photos[5].src} alt="work" onClick={() => openLightbox(5)} />
-              <img src={photos[6].src} alt="work" onClick={() => openLightbox(6)} />
+              <img src={photos[4].thumb} alt="work" onClick={() => openLightbox(4)} />
+              <img src={photos[5].thumb} alt="work" onClick={() => openLightbox(5)} />
+              <img src={photos[6].thumb} alt="work" onClick={() => openLightbox(6)} />
             </div>
             <div className="row">
-              <img src={photos[7].src} alt="work" onClick={() => openLightbox(7)} />
-              <img src={photos[8].src} alt="work" onClick={() => openLightbox(8)} />
-              <img src={photos[9].src} alt="work" onClick={() => openLightbox(9)} />
+              <img src={photos[7].thumb} alt="work" onClick={() => openLightbox(7)} />
+              <img src={photos[8].thumb} alt="work" onClick={() => openLightbox(8)} />
+              <img src={photos[9].thumb} alt="work" onClick={() => openLightbox(9)} />
             </div>
           </div>
         </div>
@@ -64,19 +64,19 @@ const Typography = (props) => {
         <h2>2 - Spread</h2>
         <h3>Introducing the typeface Didot through a 2-page spread</h3>
         <div className="spreadImages">
-          <img id="left" src={photos[10].src} alt="work" onClick={() => openLightbox(10)} />
+          <img id="left" src={photos[10].thumb} alt="work" onClick={() => openLightbox(10)} />
           <div id="right">
             <div className="row">
-              <img src={photos[11].src} alt="work" onClick={() => openLightbox(11)} />
-              <img src={photos[12].src} alt="work" onClick={() => openLightbox(12)} />
+              <img src={photos[11].thumb} alt="work" onClick={() => openLightbox(11)} />
+              <img src={photos[12].thumb} alt="work" onClick={() => openLightbox(12)} />
             </div>
             <div className="row">
-              <img src={photos[13].src} alt="work" onClick={() => openLightbox(13)} />
-              <img src={photos[14].src} alt="work" onClick={() => openLightbox(14)} />
+              <img src={photos[13].thumb} alt="work" onClick={() => openLightbox(13)} />
+              <img src={photos[14].thumb} alt="work" onClick={() => openLightbox(14)} />
             </div>
             <div className="row">
-              <img src={photos[15].src} alt="work" onClick={() => openLightbox(15)} />
-              <img src={photos[16].src} alt="work" onClick={() => openLightbox(16)} />
+              <img src={photos[15].thumb} alt="work" onClick={() => openLightbox(15)} />
+              <img src={photos[16].thumb} alt="work" onClick={() => openLightbox(16)} />
             </div>
           </div>
         </div>

@@ -40,23 +40,23 @@ const PolkaDotPoisonFrogs = (props) => {
       <div id="ppfWork">
         <h2>1 - Illustration</h2>
         <h3>An illustration that combines text and imagery to tell a story about the animal and its habitat</h3>
-        <img id="illustration" src={photos[0].src} alt="work" onClick={() => openLightbox(0)} />
+        <img id="illustration" src={photos[0].thumb} alt="work" onClick={() => openLightbox(0)} />
         <div id="illustrationRow" className="row">
-          <img src={photos[1].src} alt="work" onClick={() => openLightbox(1)} />
-          <img src={photos[2].src} alt="work" onClick={() => openLightbox(2)} />
-          <img src={photos[3].src} alt="work" onClick={() => openLightbox(3)} />
+          <img src={photos[1].thumb} alt="work" onClick={() => openLightbox(1)} />
+          <img src={photos[2].thumb} alt="work" onClick={() => openLightbox(2)} />
+          <img src={photos[3].thumb} alt="work" onClick={() => openLightbox(3)} />
         </div>
 
         <h2>2 - Plastic Model</h2>
         <h3>Using found and reclaimed packaging—plastic containers I’ve collected—to create the animal</h3>
         <div id="plasticRow1" className="row">
-          <img src={photos[4].src} alt="work" onClick={() => openLightbox(4)} />
-          <img src={photos[5].src} alt="work" onClick={() => openLightbox(5)} />
-          <img src={photos[6].src} alt="work" onClick={() => openLightbox(6)} />
+          <img src={photos[4].thumb} alt="work" onClick={() => openLightbox(4)} />
+          <img src={photos[5].thumb} alt="work" onClick={() => openLightbox(5)} />
+          <img src={photos[6].thumb} alt="work" onClick={() => openLightbox(6)} />
         </div>
         <div id="plasticRow2" className="row">
-          <img src={photos[7].src} alt="work" onClick={() => openLightbox(7)} />
-          <img src={photos[8].src} alt="work" onClick={() => openLightbox(8)} />
+          <img src={photos[7].thumb} alt="work" onClick={() => openLightbox(7)} />
+          <img src={photos[8].thumb} alt="work" onClick={() => openLightbox(8)} />
         </div>
 
         <h2>3 - Stop-Motion Animation</h2>
