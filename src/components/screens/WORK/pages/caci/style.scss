@@ -1,0 +1,67 @@
+@use "../../../../colors.scss" as c;
+
+.workPage {
+  #caciWork {
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+      margin-bottom: 1rem;
+
+      .rowOne {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+
+        .colOne {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 30vw;
+
+          img {
+            height: 14vw;
+          }
+        }
+
+        #img1, #img2 {
+          height: 30vw;
+        }
+      }
+
+      .rowTwo {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        img {
+          height: 35vw;
+        }
+      }
+    }
+  }
+}
+
+.workPageM {
+  #caciWork  {
+    padding-top: 4rem;
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 80vw;
+        margin: 1rem 0rem;
+      }
+    }
+  }
+}

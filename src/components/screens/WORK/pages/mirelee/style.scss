@@ -1,0 +1,236 @@
+@use "../../../../colors.scss" as c;
+
+.workPage, .workPageM {
+  #mireleeWork {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-size: 1rem;
+      margin: 0rem;
+      color: c.$primary;
+      padding: 0 0.3rem;
+  
+      &:hover {
+        color: c.$secondary !important;
+        text-decoration: underline;
+      }
+  
+      &:visited {
+        color: c.$primary;
+      }
+    }
+    
+    .row {
+      margin: 1rem 0;
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: 26vw;
+      }
+    }
+
+    #initialRes {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      .list {
+        margin: 0;
+      }
+
+      #section1, #section2, #section3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .bottom {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 1rem;
+        }
+      }
+
+      #section3 {  
+        .bottom {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .interactionRow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 3rem 0;
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.workPage {
+  #mireleeWork {
+    #section1 {
+      width: 27vw;
+
+      .bottom {
+        #img1 {
+          width: 15vw;
+          height: 11.3vw;
+          object-fit: cover;
+        }
+
+        #img2 {
+          width: 11.3vw;
+          height: 11.3vw;
+          object-fit: cover;
+        }
+      }
+    }
+
+    #section2 {
+      width: 27vw;
+
+      .bottom {
+        img {
+          width: 27vw;
+          height: 11.3vw;
+          object-fit: cover;
+        }
+      }        
+    }
+
+    #section3 {
+      width: 21vw;
+
+      .bottom {
+        img {
+          object-fit: cover;
+          display: flex;
+          width: 21vw;
+          height: 11.3vw;
+        }
+      }
+    }
+
+    #interactions {
+      margin: 0;
+
+      img {
+        width: 38vw;
+      }
+    }
+
+    .interactionRow {
+
+      .video {
+        width: 38vw;
+        margin: 0;
+      }
+
+      div {
+        width: 38vw;
+      }
+    }
+
+    .video {
+      width: 38vw;
+      height: 21.5vw;
+    }
+  }
+}
+
+.workPageM {
+  #mireleeWork {
+    h2 {
+      margin-top: 2rem;
+    }
+
+    .row {
+      flex-direction: column;
+
+      img {
+        width: 80vw;
+        margin: 1rem 0;
+      }
+    }
+
+    #initialRes {
+      flex-direction: column;
+
+      #section1, #section2, #section3 {
+        width: 80vw;
+
+        img {
+          width: 80vw;
+        }
+      }
+
+      #section1 {
+        .bottom {
+          #img1 {
+            width: 45vw;
+            height: 33vw;
+          }
+
+          #img2 {
+            width: 33vw;
+          }
+        }
+      }
+
+      #section2, #section3 {
+        margin-top: 2rem;
+      }
+    }
+
+    #interactions {
+      margin: 0;
+
+      img {
+        width: 80vw;
+      }
+    }
+
+    .video {
+      width: 80vw;
+      height: 45vw;
+    }
+
+    #midRow {
+      flex-direction: column;
+    }
+
+    .interactionRow {
+      flex-direction: column-reverse;
+      margin: 0;
+
+      .text {
+        margin-bottom: 1rem;
+      }
+
+      .video {
+        width: 80vw;
+        height: 45vw;
+        margin: 0;
+      }
+
+      div {
+        width: 80vw;
+      }
+    }
+  }
+}

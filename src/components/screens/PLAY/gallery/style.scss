@@ -1,0 +1,32 @@
+@use "../../../colors.scss" as c;
+
+#playGallery, #playGalleryM {
+  margin: 1rem 10vw;
+  margin-top: 4rem;
+  align-self: center;
+  min-width: 1px;
+
+  img {
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+}
+
+#playGalleryM {
+  margin-top: 8rem;
+}
+
+#photoGallery {
+  display: flex;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    object-fit: cover;
+  }
+}

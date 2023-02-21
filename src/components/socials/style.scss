@@ -1,0 +1,25 @@
+@use "../colors.scss" as c;
+
+#socialsRow {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+a {
+  color: c.$gray;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.2s;
+  margin: 0.5rem;
+
+  &:visited {
+    color: c.$gray;
+  }
+
+  &:hover {
+    color: c.$black;
+  }
+}
+
