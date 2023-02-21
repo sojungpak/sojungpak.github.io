@@ -1,9 +1,12 @@
 {
   "name": "sojungpak.github.io",
   "version": "1.0.0",
+  "homepage": "https://sojungpak.github.io",
   "description": "",
   "main": "src/index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "NODE_ENV=development webpack serve",
     "test": "eslint src",
     "build": "npm run clean; NODE_ENV=production webpack --color; cp -f _redirects dist/",
@@ -36,6 +39,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-webpack-plugin": "^2.5.4",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.1.0",
     "postcss-loader": "^6.1.1",
