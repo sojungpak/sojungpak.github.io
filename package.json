@@ -1,12 +1,12 @@
 {
   "name": "sojungpak.github.io",
   "version": "1.0.0",
-  "homepage": "https://sojungpak.github.io/sojungpak.github.io",
+  "homepage": "http://sojungpak.github.io/sojungpak.github.io",
   "description": "",
   "main": "src/index.js",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "start": "NODE_ENV=development webpack serve",
     "test": "eslint src",
     "build": "npm run clean; NODE_ENV=production webpack --color; cp -f _redirects dist/",
