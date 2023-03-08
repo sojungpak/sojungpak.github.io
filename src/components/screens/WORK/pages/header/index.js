@@ -40,17 +40,21 @@ const Header = (props) => {
         </div>
       </div>
 
-      <div className="process">
-        <p>Link to full process below ⇩</p>
-        <a
-          className="processButton"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={props.data.process}
-        >
-          Process
-        </a>
-      </div>
+      {props.data.process
+        ? (
+          <div className="process">
+            <p>Link to full process below ⇩</p>
+            <a
+              className="processButton"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={props.data.process}
+            >
+              Process
+            </a>
+          </div>
+        )
+        : null}
     </div>
   );
 };

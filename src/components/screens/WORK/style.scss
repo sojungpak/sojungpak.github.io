@@ -143,6 +143,11 @@
     width: 80vw;
     height: 45vw;
   }
+
+  .short {
+    width: 70vw;
+    height: 90vw;
+  }
 }
 
 .video {
@@ -150,4 +155,11 @@
   width: 60vw;
   height: 33.75vw;
   margin: 1rem 0;
+}
+
+.short {
+  align-self: center;
+  width: 30.5vw;
+  height: 35vw;
+  margin: 2rem 0;
 }

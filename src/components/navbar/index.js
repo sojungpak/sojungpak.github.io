@@ -10,6 +10,7 @@ import Work from '../screens/WORK';
 import ARTour from '../screens/WORK/pages/artour';
 import CACI from '../screens/WORK/pages/caci';
 import MireLee from '../screens/WORK/pages/mirelee';
+import NOMnom from '../screens/WORK/pages/nomnom';
 import PGHWaterQuality from '../screens/WORK/pages/pghwaterquality';
 import PolkaDotPoisonFrogs from '../screens/WORK/pages/polkadotpoisonfrogs';
 import Typography from '../screens/WORK/pages/typography';
@@ -36,6 +37,7 @@ const NavSwitch = (props) => {
       <Route exact path="/work/artour" render={() => <ARTour mobile={props.mobile} />} />
       <Route exact path="/work/caci" render={() => <CACI mobile={props.mobile} />} />
       <Route exact path="/work/mirelee" render={() => <MireLee mobile={props.mobile} />} />
+      <Route exact path="/work/nomnom" render={() => <NOMnom mobile={props.mobile} />} />
       <Route exact path="/work/pghwaterquality" render={() => <PGHWaterQuality mobile={props.mobile} />} />
       <Route exact path="/work/polkadotpoisonfrogs" render={() => <PolkaDotPoisonFrogs mobile={props.mobile} />} />
       <Route exact path="/work/typography" render={() => <Typography mobile={props.mobile} />} />

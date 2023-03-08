@@ -1,17 +1,18 @@
 import artour from '../../../assets/work/artourgif.gif';
 import caci from '../../../assets/work/caci.jpeg';
 import mirelee from '../../../assets/work/mirelee.gif';
+import nomnom from '../../../assets/work/nomnom.gif';
 import pghwaterquality from '../../../assets/work/pghwaterquality.jpg';
 import polkadotpoisonfrog from '../../../assets/work/polkadotpoisonfrog.gif';
 import typography from '../../../assets/work/typography.jpg';
 
 const WorkItems = [
   {
-    name: 'Mire Lee Exhibit',
-    tags: ['Exhibit'],
-    description: 'Introducing artist Mire Lee and her work through an interactive and immersive exhibit to the CMU audience',
-    image: mirelee,
-    path: 'mirelee',
+    name: 'NOMnom',
+    tags: ['UI/UX', 'App'],
+    description: 'A digital food experience for picky eaters, framed as a collaborative adventure for healthier eating habits',
+    image: nomnom,
+    path: 'nomnom',
   },
   {
     name: 'CMU AR Tour',
@@ -21,13 +22,12 @@ const WorkItems = [
     path: 'artour',
   },
   {
-    name: 'PGH Water Quality',
-    tags: ['Systems Mapping'],
-    description: 'Illustrating the “wicked problem” of Pittsburgh’s water quality, using research of causes, stakeholders, interventions, and feedback loops',
-    image: pghwaterquality,
-    path: 'pghwaterquality',
+    name: 'Mire Lee Exhibit',
+    tags: ['Exhibit'],
+    description: 'Introducing artist Mire Lee and her work through an interactive and immersive exhibit to the CMU audience',
+    image: mirelee,
+    path: 'mirelee',
   },
-
   {
     name: 'CACI International',
     tags: ['Logo', 'Graphics'],
@@ -35,7 +35,13 @@ const WorkItems = [
     image: caci,
     path: 'caci',
   },
-
+  {
+    name: 'PGH Water Quality',
+    tags: ['Systems Mapping'],
+    description: 'Illustrating the “wicked problem” of Pittsburgh’s water quality, using research of causes, stakeholders, interventions, and feedback loops',
+    image: pghwaterquality,
+    path: 'pghwaterquality',
+  },
   {
     name: 'Typography Studies',
     tags: ['Graphics', 'Motion'],
