@@ -67,7 +67,10 @@
 
       #right {
         height: 30vw;
-
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
         .row {
           img {
             height: 9.1vw;

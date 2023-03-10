@@ -10,7 +10,7 @@
   align-self: center;
   
   #workText {
-    max-width: 700px;
+    idth: 700px;
     
     h1 {
       color: c.$primary;
@@ -114,7 +114,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1300px;
 
   h2, h3 {
     color: c.$primary;
