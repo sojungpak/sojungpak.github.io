@@ -1,0 +1,166 @@
+@use "../../../../colors.scss" as c;
+
+.workPage, .workPageM {
+  #interactivelibraryWork {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    
+    .row {
+      margin: 1rem 0;
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #initialRes {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      #interviews {
+        ul {
+          padding-left: 2rem;
+          list-style-type: disc;
+        }
+      }
+
+      #quotes {
+        justify-content: space-around;
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .interactionRow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 3rem 0;
+
+      .text ul {
+        padding-top: 1.5rem;
+        padding-left: 3rem;
+      }
+    }
+  }
+}
+
+.workPage {
+  #interactivelibraryWork {
+    #exhibitRow img {
+      width: 26vw;
+    }
+
+    #floorplans img {
+      height: 23vw;
+    }
+
+    #interviews {
+      width: 60%;
+    }
+
+    #quotes {
+      width: 30%;
+    }
+
+    #interactions {
+      margin: 0;
+
+      img {
+        width: 38vw;
+      }
+    }
+
+    .interactionRow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 3rem 0;
+
+      img {
+        width: 30vw;
+      }
+
+      .text {
+        width: 45vw;
+      }
+    }
+  }
+}
+
+.workPageM {
+  #interactivelibraryWork {
+    h2 {
+      margin-top: 2rem;
+    }
+
+    .row {
+      flex-direction: column;
+
+      img {
+        width: 80vw;
+        margin: 1rem 0;
+      }
+    }
+
+    #initialRes {
+      flex-direction: column;
+
+      #quotes p {
+        margin-top: 4rem;
+        text-align: center;
+      }
+    }
+
+    #interactions {
+      margin: 0;
+
+      img {
+        width: 80vw;
+      }
+    }
+
+    .video {
+      width: 80vw;
+      height: 45vw;
+    }
+
+    #midRow {
+      flex-direction: column;
+    }
+
+    .interactionRow {
+      flex-direction: column-reverse;
+      margin: 0;
+
+      img {
+        width: 80vw;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+      }
+
+      .text {
+        margin-bottom: 1rem;
+      }
+
+      .video {
+        width: 80vw;
+        height: 45vw;
+        margin: 0;
+      }
+
+      div {
+        width: 80vw;
+      }
+    }
+  }
+}

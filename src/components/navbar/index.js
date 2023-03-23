@@ -9,6 +9,7 @@ import { IoMdClose } from 'react-icons/io';
 import Work from '../screens/WORK';
 import ARTour from '../screens/WORK/pages/artour';
 import CACI from '../screens/WORK/pages/caci';
+import InteractiveLibrary from '../screens/WORK/pages/interactivelibrary';
 import MireLee from '../screens/WORK/pages/mirelee';
 import NOMnom from '../screens/WORK/pages/nomnom';
 import PGHWaterQuality from '../screens/WORK/pages/pghwaterquality';
@@ -36,6 +37,7 @@ const NavSwitch = (props) => {
       <Route exact path="/about" render={() => <About mobile={props.mobile} />} />
       <Route exact path="/work/artour" render={() => <ARTour mobile={props.mobile} />} />
       <Route exact path="/work/caci" render={() => <CACI mobile={props.mobile} />} />
+      <Route exact path="/work/interactivelibrary" render={() => <InteractiveLibrary mobile={props.mobile} />} />
       <Route exact path="/work/mirelee" render={() => <MireLee mobile={props.mobile} />} />
       <Route exact path="/work/nomnom" render={() => <NOMnom mobile={props.mobile} />} />
       <Route exact path="/work/pghwaterquality" render={() => <PGHWaterQuality mobile={props.mobile} />} />

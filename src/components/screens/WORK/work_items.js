@@ -1,5 +1,6 @@
 import artour from '../../../assets/work/artourgif.gif';
 import caci from '../../../assets/work/caci.jpeg';
+import interactivelibrary from '../../../assets/work/interactivelibrary.png';
 import mirelee from '../../../assets/work/mirelee.gif';
 import nomnom from '../../../assets/work/nomnom.gif';
 import pghwaterquality from '../../../assets/work/pghwaterquality.jpg';
@@ -15,11 +16,11 @@ const WorkItems = [
     path: 'nomnom',
   },
   {
-    name: 'CMU AR Tour',
-    tags: ['AR'],
-    description: 'An AR experience about “A Day In The Life” tour of a current CMU student for visitors on campus',
-    image: artour,
-    path: 'artour',
+    name: 'Interactive Library',
+    tags: ['Exhibit'],
+    description: 'Designing a spatial + interactive intervention for libraries in the future for people to focus, explore, and encounter',
+    image: interactivelibrary,
+    path: 'interactivelibrary',
   },
   {
     name: 'Mire Lee Exhibit',
@@ -29,11 +30,11 @@ const WorkItems = [
     path: 'mirelee',
   },
   {
-    name: 'CACI International',
-    tags: ['Logo', 'Graphics'],
-    description: 'Collection of graphic design work done during my time an an intern at CACI International',
-    image: caci,
-    path: 'caci',
+    name: 'CMU AR Tour',
+    tags: ['AR'],
+    description: 'An AR experience about “A Day In The Life” tour of a current CMU student for visitors on campus',
+    image: artour,
+    path: 'artour',
   },
   {
     name: 'PGH Water Quality',
@@ -43,11 +44,11 @@ const WorkItems = [
     path: 'pghwaterquality',
   },
   {
-    name: 'Typography Studies',
-    tags: ['Graphics', 'Motion'],
-    description: 'Graphic studies studying typography and hierarchy (poster, magazine spread, animation)',
-    image: typography,
-    path: 'typography',
+    name: 'CACI International',
+    tags: ['Logo', 'Graphics'],
+    description: 'Collection of graphic design work done during my time an an intern at CACI International',
+    image: caci,
+    path: 'caci',
   },
   {
     name: 'Polkadot Poison Frog',
@@ -55,6 +56,13 @@ const WorkItems = [
     description: '3-part project understanding form and using storytelling for the endangered Polkadot Poison Frog',
     image: polkadotpoisonfrog,
     path: 'polkadotpoisonfrogs',
+  },
+  {
+    name: 'Typography Studies',
+    tags: ['Graphics', 'Motion'],
+    description: 'Graphic studies studying typography and hierarchy (poster, magazine spread, animation)',
+    image: typography,
+    path: 'typography',
   },
 ];
 
