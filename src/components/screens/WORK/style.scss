@@ -1,0 +1,164 @@
+@use "../../colors.scss" as c;
+
+#work, #workM {
+  margin: 1rem 10vw;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1300px;
+  align-self: center;
+  
+  #workText {
+    idth: 700px;
+    
+    h1 {
+      color: c.$primary;
+      font-size: 2.5rem;
+    }
+
+    #stars {
+      font-size: 1.4rem;
+      margin: 0.2rem 0rem;
+    }
+
+    #description {
+      font-size: 1.4rem;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+
+      b {
+        color: c.$primary;
+        font-weight: 400;
+      }
+    }
+
+    #starList {
+      margin-bottom: 1.5rem;
+
+      div {
+        display: flex;
+
+        .star {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    #caci {
+      font-size: 0.9rem;
+      margin: 0rem;
+      color: c.$primary;
+      text-decoration: underline;
+
+      &:hover {
+        color: c.$secondary !important;
+      }
+
+      &:visited {
+        color: c.$primary;
+      }
+    }
+  }
+  
+  #thumbnails {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+}
+
+#workM {
+  padding-top: 8rem;
+  margin-top: 1rem;
+
+  #workText {
+    h1 {
+      font-size: 2rem;
+    }
+
+    #stars {
+      font-size: 1.1rem;
+    }
+  }
+
+  #thumbnails {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@for $i from 1 through 33 {
+  #--i#{$i} {
+    display: inline-block;
+    animation: waviy 0.8s infinite;
+    animation-delay: calc(.05s * #{$i}); 
+  }
+}
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+
+  20% {
+    transform: translateY(-8px)
+  }
+}
+
+.workPage, .workPageM {
+  margin: 1rem 10vw;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2, h3 {
+    color: c.$primary;
+    margin-bottom: 0.5rem;
+  } 
+
+  h3 {
+    margin: 0.2rem 0rem;
+  }
+
+  img {
+    transition: transform 0.2s;
+    object-fit: contain;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+    }
+  }
+}
+
+.workPageM {
+  padding-top: 4rem;
+
+  .video {
+    width: 80vw;
+    height: 45vw;
+  }
+
+  .short {
+    width: 70vw;
+    height: 90vw;
+  }
+}
+
+.video {
+  align-self: center;
+  width: 60vw;
+  height: 33.75vw;
+  margin: 1rem 0;
+}
+
+.short {
+  align-self: center;
+  width: 30.5vw;
+  height: 35vw;
+  margin: 2rem 0;
+}

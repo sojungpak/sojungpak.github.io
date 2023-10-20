@@ -1,0 +1,48 @@
+@use "../../../../colors.scss" as c;
+
+.workPage, .workPageM {
+  #ppfWork {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    #illustration {
+      width: 80vw;
+    }
+
+    img {
+      margin: 0.5rem 0;
+    }
+
+    .row {
+      width: 80vw;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #illustrationRow img {
+      width: 25.5vw;
+    }
+
+    #plasticRow1 img {
+      width: 26vw;
+    }
+
+    #plasticRow2 img {
+      width: 39.5vw;
+      height: 25.9vw;
+    }
+  }
+}
+
+.workPageM #ppfWork h2 {
+  margin-top: 3rem;
+}

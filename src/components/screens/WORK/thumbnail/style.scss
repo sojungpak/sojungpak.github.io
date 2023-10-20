@@ -1,0 +1,99 @@
+@use "../../../colors.scss" as c;
+
+$width : 35vw;
+$maxwidth : 600px;
+$maxheight: 345px;
+
+.thumbnail, .thumbnailM {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin: 1rem 0rem;
+  width: $width;
+  max-width: $maxwidth;
+
+  &:hover {
+    .imgZoom img {
+      transform: scale(1.1);
+    }
+  }
+  
+  .titleRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.6rem 0rem;
+
+    h2 {
+      font-weight: 400;
+      font-size: min(1.85vw, 25px);
+      color: c.$primary;
+    }
+    
+    .tags {
+      display: flex;
+
+      p {
+        background-color: c.$primary;
+        color: c.$white;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.4rem;
+        font-size: min(1.2vw, 20px);
+        margin: 0rem 0.2rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .imgZoom {
+    width: $width;
+    max-width: $maxwidth;
+    height: 20.2vw;
+    max-height: $maxheight;
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+
+    img {
+      width: $width;
+      max-width: $maxwidth;
+      height: 20.2vw;
+      max-height: $maxheight;
+      object-fit: cover;
+      transition: transform .5s ease;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: c.$black;
+  }
+
+  a {
+    color: c.$black;
+  }
+}
+
+.thumbnailM {
+
+  .imgZoom {
+    width: 80vw;
+    height: 45vw;
+
+    img {
+      width: 80vw;
+      height: 45vw;
+    }
+  }
+
+  .titleRow {
+    h2 {
+      font-size: 1rem;
+    }
+    
+    .tags p {
+      font-size: 0.6rem;
+    }
+    
+  }
+}

@@ -1,0 +1,127 @@
+@use "../../../../colors.scss" as c;
+
+.workPage, .workPageM {
+  #nomnomWork {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      font-size: 1rem;
+      margin: 0rem;
+      color: c.$primary;
+      padding: 0 0.3rem;
+  
+      &:hover {
+        color: c.$secondary !important;
+        text-decoration: underline;
+      }
+  
+      &:visited {
+        color: c.$primary;
+      }
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    b {
+      margin-bottom: 1rem;
+    }
+
+    #list {
+      margin: 0.5rem 0;
+      margin-left: 2rem;
+    }
+
+    .row {
+      margin: 1rem 0;
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: space-between;
+
+      .col {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .text {
+        h2 {
+          margin: 0;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.workPage {
+  #nomnomWork {
+    .row {
+      #screens {
+        width: 37.5vw;
+      }
+
+      #logos {
+        width: 42vw;
+      }
+
+      .col {
+        img {
+          width: 26.5vw;
+        }
+      }
+    }
+
+    .mockups {
+      .row {
+        align-items: center;
+
+        img {
+          width: 12vw;
+          margin-right: 4vw;
+        }
+  
+        .text {
+          width: 21vw;
+        }
+      }
+    }
+  }
+}
+
+.workPageM {
+  #nomnomWork {
+    h2 {
+      margin-top: 4rem;
+    }
+
+    .row {
+      flex-direction: column;
+
+      img {
+        width: 80vw;
+        margin: 1rem 0;
+      }
+
+      .col {
+        img {
+          margin: 0;
+        }
+      }
+    }
+
+    .mockups {
+      .row {
+        flex-direction: column-reverse;
+
+        img {
+          width: 40vw;
+          margin-top: 3rem;
+          align-self: center;
+        }
+      }
+    }
+  }
+}
